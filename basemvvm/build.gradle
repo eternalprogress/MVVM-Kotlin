@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.novoda.bintray-release'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -29,6 +30,9 @@ android {
     dataBinding {
         enabled true
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -56,4 +60,12 @@ dependencies {
     api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
 
     api 'org.greenrobot:eventbus:3.2.0'
+}
+publish {
+    userOrg = 'jokermk'
+    repoName = 'MVVM-Kotlin'
+    groupId = 'com.joker.mvvm'
+    artifactId = 'MVVM-Kotlin'
+    publishVersion = '0.0.1'
+    desc = 'MVVM-Kotlin for Android'
 }
