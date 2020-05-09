@@ -1,4 +1,4 @@
-package com.joker.mvvm.kotlin.basemvvm.bravhdatabinding
+package com.joker.mvvm.kotlin.basemvvm.databindadapter
 
 /**
  * @Author joker

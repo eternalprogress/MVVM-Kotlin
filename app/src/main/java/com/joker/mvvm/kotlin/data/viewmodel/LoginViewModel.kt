@@ -22,8 +22,8 @@ class LoginViewModel :BaseViewModel() {
             user.value = userRepo.login(name)
             //保存到本地
             Log.e("=======","${user.value}")
-            //发送通知结束登录跳转界面
-            EventBus.getDefault().post(user.value?.name ?:"null")
+            //发送通知结束登录跳转界面(activity不使用databing则不需要EventBus做业务分离 例如LoginNoDataBindingActivity)
+            EventBus.getDefault().post(user.value ?:"null")
         }
     }
 

@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -57,9 +58,11 @@ dependencies {
 
     api 'com.google.code.gson:gson:2.8.6'
 
-    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
 
     api 'org.greenrobot:eventbus:3.2.0'
+
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.2'
+
 }
 publish {
     userOrg = 'jokermk'

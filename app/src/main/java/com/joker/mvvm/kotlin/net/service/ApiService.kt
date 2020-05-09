@@ -12,4 +12,8 @@ import retrofit2.http.Path
 interface ApiService {
     @GET("logintest/{name}")
     suspend fun login(@Path("name") name:String):BaseResult<User>
+
+    @GET("recyclerview/{page}")
+    suspend fun getList(@Path("page") page:Int):BaseResult<MutableList<String>>
+
 }
