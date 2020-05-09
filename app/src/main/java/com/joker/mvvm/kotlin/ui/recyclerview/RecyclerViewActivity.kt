@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import com.joker.mvvm.kotlin.R
@@ -11,8 +12,10 @@ import com.joker.mvvm.kotlin.base.MyBaseDBActivity
 import com.joker.mvvm.kotlin.basemvvm.view.activity.BaseDataBindingActivity
 import com.joker.mvvm.kotlin.data.viewmodel.RvListViewModel
 import com.joker.mvvm.kotlin.databinding.ActivityRecyclerViewBinding
+import com.joker.mvvm.kotlin.mmkvtest.Setting
 import com.joker.mvvm.kotlin.ui.login.LoginNoDataBindingActivity
 import com.joker.mvvm.kotlin.ui.recyclerview.adapter.ReAdapter
+import com.tencent.mmkv.MMKV
 
 class RecyclerViewActivity : MyBaseDBActivity<ActivityRecyclerViewBinding>() {
 
