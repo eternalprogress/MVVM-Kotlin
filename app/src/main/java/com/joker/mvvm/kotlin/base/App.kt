@@ -1,4 +1,4 @@
-package com.joker.mvvm.kotlin.ui
+package com.joker.mvvm.kotlin.base
 
 import com.joker.mvvm.kotlin.basemvvm.application.MVVMApp
 
