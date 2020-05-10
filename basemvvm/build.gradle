@@ -71,6 +71,6 @@ publish {
     repoName = 'MVVM-Kotlin'
     groupId = 'com.joker.mvvm'
     artifactId = 'MVVM-Kotlin'
-    publishVersion = '0.0.1'
+    publishVersion = '0.0.2'
     desc = 'MVVM-Kotlin for Android'
 }
